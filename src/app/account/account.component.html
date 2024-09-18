@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12 col-md-8 col-md-offset-2">
+        <div class="card text-center">
+            <div class="card-header">
+                <h4>Account Details</h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Card ID: <strong>{{ id }}</strong></p>
+                <h5 class="card-title">Server Name: <strong>{{ account.name }}</strong></h5>
+                <p class="card-text">Status: <strong>{{ account.status }}</strong></p>
+                <div class="btn-group" role="group" aria-label="Account Status">
+                    <button type="button" class="btn btn-primary" (click)="onSetTo('active')">Set to 'Active'</button>
+                    <button type="button" class="btn btn-secondary" (click)="onSetTo('inactive')">Set to 'Inactive'</button>
+                    <button type="button" class="btn btn-light" (click)="onSetTo('unknown')">Set to 'Unknown'</button>
+                </div>
+            </div>
+        </div> 
+        <br>
+    </div>
+</div>
